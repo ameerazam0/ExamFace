@@ -33,9 +33,9 @@ while run:
     if face_extractor(frame) is not None:
         count+=1
         face = cv2.resize(face_extractor(frame), (400, 400))
-        cv2.rectangle(frame,(90,45),(50,20),(0,255,0),6)
-        cv2.putText(face, tic(), (30, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 1)
+
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        cv2.putText(face, tic(), (30, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 1)
         FRAME_WINDOW.image(face)
     else:
         cv2.putText(face, tic(), (30, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 1)
