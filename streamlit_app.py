@@ -38,7 +38,7 @@ while run:
         cv2.putText(face, tic(), (30, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 1)
         FRAME_WINDOW.image(face)
     else:
-        cv2.putText(face, tic(), (30, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 1)
+        #cv2.putText(face, tic(), (30, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 1)
         cv2.putText(face, 'Face Not On Camera', (40, 200), cv2.FONT_HERSHEY_COMPLEX, 1, (0, 0, 255), 5)
         FRAME_WINDOW.image(face)
     #if cv2.waitKey(1) & 0xFF == ord('q'):
